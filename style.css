@@ -46,8 +46,8 @@
     font-family: Lato, sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 1.7vw;
+    /* line-height: 10px; */
     color: black;
 
     margin: auto;
@@ -56,9 +56,8 @@
 .content-container h3 {
     font-style: normal;
     font-family: inherit;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 40px;
+    font-weight: inherit;
+    font-size: inherit;
     text-align: right;
 }
 
