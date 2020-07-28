@@ -52,6 +52,16 @@ p {
     font-weight: normal;
 }
 
+.video-holder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
