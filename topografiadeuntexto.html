@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/topografiadeuntexto.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Topografía de un Texto | SEBASTIAN</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+        $(function(){
+        $("#nav-placeholder").load("common/navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="content-container">
+        <h1>topografía de un texto</h1>
+        <p>
+            Las mutaciones de una línea a otra, el recorrido intertextual, los ritmos y consonancias de un texto producen una suerte de paisaje que se recorre en el momento de la lectura: una topografía de la sonoridad. 
+        </p>
+        <div class="video-holder">
+            <video src="assets/topografiadeuntexto/video.mp4" controls></video>
+        </div>
+        <p>
+            Usando inteligencia artificial las relaciones semánticas y sintácticas de las palabras en el texto determinan las ondulaciones de las líneas sobrepuestas en él de la misma manera que ellas determinan el ritmo y la cadencia de su lectura.
+        </p>
+        <img class='drawing' src="assets\topografiadeuntexto\algoritmo.svg" alt="estructura del algoritmo">
+        <p>
+            Esta intervención es una representación del primer párrafo de La Nieve del Almirante, Álvaro Mutis (1986). 
+        </p>
+        <img class='drawing' src="assets\topografiadeuntexto\ondulaciones.svg" alt="estructura del algoritmo">
+        <p>
+            Aquí las líneas ondulantes son interpoladas generando una topografía extratextual
+        </p>
+        <img class='drawing' src="assets\topografiadeuntexto\full_lines.svg" alt="estructura del algoritmo">
+        <p>que es posteriormente utilizada en un sintetizador 
+            <a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_mediante_tabla_de_ondas" rel="noopener noreferrer" target="_blank" id="email">
+                <em>Wavetable</em>
+            </a> 
+            que produce el sonido de los instumentos que acompañan el paisaje sonoro contruido en esta obra.</p>
+    </div>
+</body>
+</html>
