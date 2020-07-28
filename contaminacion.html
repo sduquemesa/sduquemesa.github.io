@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/contaminacion.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Contaminación | SEBASTIAN</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+        $(function(){
+        $("#nav-placeholder").load("common/navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+    
+    <div class="content-container">
+        <h1>
+            Contaminación
+        </h1>
+        <p>
+            Este es un conjunto de trabajos que explora la contaminación en Medellín mediante el uso de datos historicos y en tiempo real sobre la concentración de contaminantes PM2.5. 
+        </p>
+        <p style="margin-bottom: 2rem;">
+            Los datos son obtenidos de PurpleAir y AQICN a través de sus APIs.
+        </p>
+        <div class="map-container">
+            <div id='map' style='height:320px; width: 80%; margin:auto'/>  
+            
+            <script  src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>  
+            <link  rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"/>  
+            <script>  
+
+                var  map  =  L.map('map').setView([6.2476,-75.5658],  11);
+                var  OSM_URL  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';  
+                var  OSM_ATTRIB  =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors';  
+                var  osmLayer  =  L.tileLayer(OSM_URL,  {attribution:  OSM_ATTRIB}).addTo(map);
+            
+                var  WAQI_URL    =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=ee653e74795a9e150148160d08fc9d66eb5157a7";  
+                var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';  
+                var  waqiLayer  =  L.tileLayer(WAQI_URL,  {attribution:  WAQI_ATTR}).addTo(map);  
+                waqiLayer.setOpacity(0.6);
+            </script>
+        </div>
+        <p style="margin-top: 2em;">
+        Estos datos son recolectados y analizados algoritmicamente para luego ser usados como recurso generador de melodías y paisajes sonoros que ponen en evidencia el impacto de las dinámicas de la ciudad en su medio ambiente.
+        </p>
+        <div class="video-holder">
+            <video src="assets\contaminacion\C24C.mp4" controls></video>
+        </div> 
+        <p>
+            <em>9 y 16 de Marzo, 2020—</em>En estos días Medellín declara emergencia ambiental y luego calamidad pública para la mitigación del riesgo del COVID19, respectivamente. 
+        </p>
+        <p>
+            La intervención explora la dinámica de estos dos Lunes en los cuales Medellín y sus ciudadanos se enfrentan a coyunturas que apelan a decisiones tanto sociales y políticas como privadas e individuales.
+        </p>
+        <p>
+            Los datos de la concentración de contaminantes PM2.5 en cada uno de estos días son asignados a notas musicales. La progresión de ellos genera un diálogo polifónico que, a través de sus consonancias o disonancias, pone en evidencia el impacto de las dinámicas de la ciudad y sus acontecimientos. 
+        </p>
+        <div class="video-holder">
+            <video src="assets\contaminacion\C24C2.mp4" controls></video>
+        </div> 
+        <p>
+            16 y 23 de Marzo, 2020—En estos días Medellín declara calamidad pública para la mitigación del riesgo del COVID19 y cuarentena por la vida, respectivamente. 
+        </p>
+        <p>
+            A pesar de la cuarentena y el cese de circulación del parque automotor, la crisis ambiental muestra que es importante evaluar y reconocer las causas de la contaminación en el valle. Justo ahora que se toman medidas drásticas para la contención del coronavirus —medidas que tienen impacto directo sobre la población y la economía— surge la pregunta sobre las acciones que se toman y tomamos para mejorar la calidad del aire.
+        </p>
+        <p>
+            El coronavirus es un problema global y repentino. La contaminación es un problema local y persistente. ¿Cómo pensar, comparar, discutir y aprender para tomar medidas que impacten el bienestar de los habitantes a nivel local?
+        </p>
+        <p style="margin-top: 2rem;">
+            En ambas intervenciones son las voces informativas de los aconteceres de la ciudad las que acompañan este diálogo de 24 horas en un minuto de una Medellín que no sabía si usaba mascarilla por la contaminacion o la pandemia.
+        </p>
+        <p style="text-align: center; margin-bottom: 2em; margin-top: 5rem;">
+            Un proyecto de
+        </p>
+        <a href="https://www.instagram.com/ethostekne/" rel="noopener noreferrer" target="_blank">
+            <img src="assets/logo_et.png" alt="logo ethos tekne" id='logo-et'>
+        </a>
+    </div>
+</body>
+</html>
