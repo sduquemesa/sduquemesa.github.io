@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174014278-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174014278-1');
+    </script>
+    <!-- End of Google Analytics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
@@ -33,21 +43,22 @@
             Los datos son obtenidos de PurpleAir y AQICN a través de sus APIs.
         </p>
         <div class="map-container">
-            <div id='map' style='height:320px; width: 80%; margin:auto'/>  
-            
+            <div  id='map'  style='height:380px;'  />  
+            <link  rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"  />  
             <script  src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>  
-            <link  rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"/>  
-            <script>  
-
-                var  map  =  L.map('map').setView([6.2476,-75.5658],  11);
-                var  OSM_URL  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';  
-                var  OSM_ATTRIB  =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors';  
-                var  osmLayer  =  L.tileLayer(OSM_URL,  {attribution:  OSM_ATTRIB}).addTo(map);
             
-                var  WAQI_URL    =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=ee653e74795a9e150148160d08fc9d66eb5157a7";  
+            <script>  
+                var  OSM_URL  =  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';  
+                var  OSM_ATTRIB  =  '&copy;  <a  href="https://openstreetmap.org/copyright">OpenStreetMap</a>  contributors';  
+                var  osmLayer  =  L.tileLayer(OSM_URL,  {attribution:  OSM_ATTRIB});  
+            
+                var  WAQI_URL    =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=_TOKEN_ID_";  
                 var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';  
-                var  waqiLayer  =  L.tileLayer(WAQI_URL,  {attribution:  WAQI_ATTR}).addTo(map);  
+                var  waqiLayer  =  L.tileLayer(WAQI_URL,  {attribution:  WAQI_ATTR});  
                 waqiLayer.setOpacity(0.6);
+            
+                var  map  =  L.map('map').setView([6.2476,-75.5658],  11);  
+                map.addLayer(osmLayer).addLayer(waqiLayer);  
             </script>
         </div>
         <p style="margin-top: 2em;">
