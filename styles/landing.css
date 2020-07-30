@@ -3,6 +3,7 @@
     font-style: italic;
     font-weight: 300;
     font-size: 3.6vmin;
+    line-height: 1.3em;
     /* line-height: 10px; */
     color: black;
 
@@ -19,4 +20,34 @@
     font-weight: inherit;
     font-size: inherit;
     text-align: right;
+}
+
+.button {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .content-container pre {
+        font-size: 3.5vmin;
+        line-height: 2em;
+        margin-right: 2rem;
+    }
+
+    .button {
+        display: block;
+        color: #001F30; 
+        font-family: lato;
+        font-weight: 400;
+        font-size: x-large;
+        border: 1px solid #003049;
+        border-radius: 50%;
+    }
 }
