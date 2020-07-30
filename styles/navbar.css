@@ -51,6 +51,7 @@
     height: 3px;
     background-color: #003049;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 .social-nav {
@@ -93,6 +94,7 @@
     body {
         overflow-x: hidden;
     }
+
     .nav-container {
         display: flex;
         flex-direction: row;
@@ -103,49 +105,79 @@
         height: 10vh;
         z-index: 100;
     }
-    .content-container {
-        position: absolute;
-        top: 10vh;
-        left: 0vw;
-
-        padding-left: 5vw;
-        padding-right: 5vw;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
-    }
-    .nav-links {
+   
+    /* .nav-links {
         display: none;
-    }
+    } */
+
     .title-name a {
         display: flex;
         flex-direction: row;
-        font-size: 20px; 
+        font-size: x-large; 
         /* line-height: 23px; */
     }
+
     #last-name {
-        font-size: 20px;
+        font-size: x-large;
         margin-left: 0.25rem;
     }
+
     .social-nav {
         display: none;
     }
+
     .burger {
         display: block;
+        cursor: pointer;
     }
+
     /* nav {
         font-size: 14px;
         width: 100vw;
-    }
+    } */
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vw;
+        /* height: 92vw; */
         top: 8vh;
         width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
         transform: translateX(100%);
-        background-color: #D62828; 
+        transition: transform 0.4s ease-out;
+        /* background-color: #D62828;  */
     }
+
     .nav-links li {
+        opacity: 0%;
+    } 
+    
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+    from {
         opacity: 0;
-    } */
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle #line2 {
+    opacity: 0;
+}
+
+.toggle #line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
 }

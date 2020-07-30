@@ -70,21 +70,27 @@ h2 {
     color: #000000;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-
-    text-transform: uppercase;
-
-    color: #000000;
-}
-
 p {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 23px;
     text-indent: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        position: absolute;
+        top: 10vh;
+        left: 0vw;
+
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
