@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+.content-container {
+    height: 100vh;
+}
+
 .content-container h3 {
     font-style: normal;
     font-family: inherit;

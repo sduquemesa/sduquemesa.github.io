@@ -97,12 +97,34 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+
+        width: 100vw;
+        height: 10vh;
+        z-index: 100;
     }
-    .title-name {
-        font-size: 25px; line-height: 23px;
+    .content-container {
+        position: absolute;
+        top: 10vh;
+        left: 0vw;
+
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+    .nav-links {
+        display: none;
+    }
+    .title-name a {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px; 
+        /* line-height: 23px; */
     }
     #last-name {
         font-size: 20px;
+        margin-left: 0.25rem;
     }
     .social-nav {
         display: none;
@@ -110,7 +132,7 @@
     .burger {
         display: block;
     }
-    nav {
+    /* nav {
         font-size: 14px;
         width: 100vw;
     }
@@ -125,5 +147,5 @@
     }
     .nav-links li {
         opacity: 0;
-    }
+    } */
 }
