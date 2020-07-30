@@ -22,6 +22,7 @@ p {
     height: 45vh; 
     width: 80%; 
     margin: auto;
+    z-index: 0;
 }
 
 .video-holder {
