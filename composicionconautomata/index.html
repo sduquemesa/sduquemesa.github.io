@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174014278-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174014278-1');
+    </script> -->
+    <!-- End of Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/composicionconautomata.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Composición con Autómata Celular | SEBASTIAN</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+        $(function(){
+        $("#nav-placeholder").load("/common/navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="content-container">
+        <h1>composición con autómata celular</h1>
+        <p>
+            ¿Es posible que un algoritmo genere una composición musical de manera completamente independiente? 
+        </p>
+        <div class="video-holder">
+            <video src="/assets/composicionconautomata/video.mp4" controls></video>
+        </div>
+        <p>
+            Un autómata celular es un arreglo de elementos en una
+            cuadricula que describe sistemas naturales como una colección masiva de objetos
+            simples que interactúan localmente unos con otros a partir de reglas sencillas. Partiendo de la unidad (el individuo) y de sus interacciones emerge la complejidad del conjunto (la sociedad) representado
+            numéricamente de manera simple en este arreglo de elementos.
+        </p>
+        <img class='drawing' src="\assets\composicionconautomata\esquema.svg" alt="esquema experimento optico">
+        <p>
+            Aquí, una interfaz programática toma el algoritmo del autómata celular y genera notas musicales en una escala definida. Así, la partitura de esta composición es creada de manera completa y automática por el algoritmo. La intervención del compositor se limita entonces a usar esta partitura para la síntesis de los instrumentos y el arreglo de la pieza. 
+        </p>
+        <p>
+            El video, generado utilizando 
+            <a href="https://hydra.ojack.xyz/" rel="noopener noreferrer" target="_blank">
+            HYDRA</a> (un sintetizador algoritmico de video digital) responde a las propiedades sonoras de la pieza a través del análisis de sus frecuencias. 
+        </p>
+
+    </div>
+
+</body>
