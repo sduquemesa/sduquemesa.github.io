@@ -40,15 +40,15 @@ img {
     width: 25% !important;
 }
 
-p a {
-    /* font-style: italic; */
-    text-decoration: none;
-    color: #001F30;
-    font-family: 'Open Sans';
-}
-
 p a:hover {
     color: #D62828;
+}
+
+p a {
+    font-style: italic;
+    text-decoration: none;
+    color: #001F30;
+    /* font-family: 'Open Sans'; */
 }
 
 .video-holder {
