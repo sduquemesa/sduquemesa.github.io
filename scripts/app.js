@@ -9,7 +9,6 @@ const navSlide = () => {
 
         // Toggle nav
         nav.classList.toggle('nav-active');
-        social.classList.toggle('nav-active');
 
         // Animate links
         navLinks.forEach((link, index) => {
@@ -19,12 +18,6 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index/7  + 0.25}s`;
             }
         });
-
-        if (social.style.animation) {
-            social.style.animation = '';
-        } else {
-            social.style.animation = `navLinkFade 0.5s ease forwards ${index/7  + 0.25}s`;
-        }
 
         // Burger animation
         burger.classList.toggle('toggle');
