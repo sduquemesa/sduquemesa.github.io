@@ -60,12 +60,14 @@
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
+    background-color: transparent;
 }
 
 .social-nav a {
     display: block;
     width: auto;
     padding-right: 5%;
+    background-color: transparent;
 }
 
 .social-nav img {
@@ -125,6 +127,21 @@
 
     .social-nav {
         display: none;
+        position: absolute;
+        right: 0px;
+        height: 5vh;
+        width: 100vw;
+        top: 90vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        color: transparent;
+
+        display: none;
+        transition: transform 0.4s ease-out;
+
     }
 
     .burger {
@@ -145,10 +162,11 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         color: black;
 
         margin: auto;
+        padding-top: 2rem;
         text-align: center;
         font-size: x-large;
         transform: translateX(100%);
