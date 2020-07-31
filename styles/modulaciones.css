@@ -20,36 +20,6 @@
     margin-bottom: 2rem;
 }
 
-.link {
-    font-style: italic;
-    text-decoration: none;
-    color: #001F30;
-    font-family: 'Open Sans';
-    font-weight: 300;
-}
-
-a:hover {
-    color: #D62828;
-}
-
-img {
-    display: block;
-    width: 50%;
-    margin: auto;
-}
-
 #logo-catul {
     width: 80% !important;
-}
-
-#logo-et {
-    width: 25% !important;
-}
-
-#logo-explora {
-    width: 50% !important;
-}
-
-#logo-exploratorio {
-    width: 50% !important;
 }
