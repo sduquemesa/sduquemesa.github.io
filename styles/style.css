@@ -181,4 +181,12 @@ img {
     h1, h2 {
         text-align: center;
     }
+
+    .video-holder {
+        width: 100%;
+    }
+
+    .drawing {
+        width: 100%;
+    }
 }
