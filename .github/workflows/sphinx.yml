@@ -1,0 +1,33 @@
+name: Deploy Sphinx Docs
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install .
+
+      - name: Build Sphinx documentation
+        run: |
+          make html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/ 
+          publish_branch: gh-pages 
