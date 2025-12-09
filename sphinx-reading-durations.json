@@ -1,7 +1,8 @@
 {
-    "about": 0.021,
-    "contact": 0.002,
+    "about": 0.06,
+    "contact": 0.003,
     "index": 0.004,
-    "projects": 0.001,
+    "projects": 0.254,
+    "publications": 0.006,
     "writing": 0.001
 }

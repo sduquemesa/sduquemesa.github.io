@@ -13,7 +13,7 @@ Sebastián Duque Mesa
 My interests span across quantum physics, computation, and generative art. Trained in light-matter
 entanglement and quantum architectures, I develop scalable photonic quantum
 technologies while thinking on the epistemic and perceptual implications
-of emerging computation. My braoder practice extends this inquiry through sound and 
+of emerging computation. My broder practice extends this inquiry through sound and 
 custom electronic systems that create generative environments where the
 synthetic and the organic blur into new modes of sensing and relation.
 
@@ -21,7 +21,8 @@ synthetic and the organic blur into new modes of sensing and relation.
    :maxdepth: 2
    :hidden:
 
-   .. projects
+   publications
+   projects
    .. writing
    about
    contact
