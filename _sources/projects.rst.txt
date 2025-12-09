@@ -1,6 +1,11 @@
 Projects
 ########
 
+.. figure:: _static/waves.svg
+   :scale: 10%
+   :align: center
+   :alt: magenta stands and smiles in the middle of forest bathed in light
+
 Mixtapes
 ========
 * `En el éter <https://youtu.be/89yUqnHGzzI?si=axwBk-oJ41h6cm44>`_
