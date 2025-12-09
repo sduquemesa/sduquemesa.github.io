@@ -6,6 +6,8 @@ Projects
    :align: center
    :alt: magenta stands and smiles in the middle of forest bathed in light
 
+Or rather, experiments...
+
 Mixtapes
 ========
 * `En el éter <https://youtu.be/89yUqnHGzzI?si=axwBk-oJ41h6cm44>`_
@@ -34,3 +36,5 @@ WebArt
     JS + word2vec + tSNE. By Ethos Tekné, 2020.
 * `ID10 <https://sduquemesa.github.io/ID10-facedetection/>`__ 
     P5.js + Hydra Videosynth + Facemesh. Sebastián Duque @ Exploratorio Med, 2021.
+* `Tweet2SoundSequence <https://sduquemesa.github.io/ckweb/>`_
+    P5.js + Tone.js + MusicVAE
